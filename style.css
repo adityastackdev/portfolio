@@ -1366,6 +1366,10 @@ footer .glow-text {
         border-left: 1px solid var(--glass-border);
     }
 
+    .nav-links a {
+        color: white;
+    }
+
     .nav-links.active {
         right: 0;
     }
