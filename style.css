@@ -1373,7 +1373,7 @@ footer .glow-text {
     }
 
     .nav-links.active {
-        right: 0;
+        right: -50;
         color: white;
     }
 
