@@ -10,7 +10,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/thumbnails/008/489/846/small/capital-a-fire-alphabet-letters-icon-design-png.png">
+    <link rel="icon" type="image/png"
+        href="https://static.vecteezy.com/system/resources/thumbnails/008/489/846/small/capital-a-fire-alphabet-letters-icon-design-png.png">
 
 
 </head>
@@ -21,6 +22,16 @@
     <div id="loader">
         <div class="loader-ring"></div>
         <div class="loader-text">LOADING...</div>
+    </div>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">AK</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Initializing Portfolio...</div>
+        </div>
     </div>
 
     <!-- CUSTOM CURSOR -->
@@ -55,7 +66,7 @@
             <h1>Hi, I'm <br>Aditya Kumar <span class="wave">👋</span></h1>
             <p class="hero-subtitle">Class 7 Student | Frontend Developer | Pencil Artist</p>
             <div class="typing-wrapper">
-                <span class="typing-prefix">I am a </span>
+                <!-- <span class="typing-prefix">I am a </span> -->
                 <span class="typing-text" id="typing"></span>
                 <span class="cursor-blink"></span>
             </div>
@@ -227,7 +238,10 @@
         </div>
         <div class="projects-grid">
             <div class="project-card reveal">
-                <div class="project-image p1"><i class="fas fa-user-astronaut"></i></div>
+                <div class="project-image p1">
+                    <img src="https://imgs.search.brave.com/x-_xIInJS04tJi4YxUH4uUio3mKnYXgfG4HPiguDRCY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ZW1w/bGF0ZS5jYW52YS5j/b20vRUFGQ3k4cEJF/VG8vMS8wLzE2MDB3/LUo3NlAzdExBUnpn/LmpwZw"
+                        alt="">
+                </div>
                 <div class="project-content">
                     <h3>Personal Portfolio</h3>
                     <p>A futuristic 2D animated portfolio website with glassmorphism, particles, and cinematic effects.
@@ -241,7 +255,10 @@
                 </div>
             </div>
             <div class="project-card reveal">
-                <div class="project-image p2"><i class="fas fa-bolt"></i></div>
+                <div class="project-image p2"><img
+                        src="https://imgs.search.brave.com/CmxLhG1ntGHq2qd1yZkmDRdrVSYDpIk5I3qJcSxI6Nc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDcv/MTI4LzU3NC9zbWFs/bC9idXNpbmVzc21h/bi1ob2xkLXNtYXJ0/cGhvbmUtd2l0aC1v/bmxpbmUtc2hvcHBp/bmctY29uY2VwdC1t/YXJrZXRwbGFjZS13/ZWJzaXRlLXdpdGgt/dmlydHVhbC1pbnRl/cmZhY2Utb2Ytb25s/aW5lLXNob3BwaW5n/LWNhcnQtcGFydC1v/Zi10aGUtbmV0d29y/ay1vbmxpbmUtc2hv/cHBpbmctYnVzaW5l/c3Mtd2l0aC1zZWxl/Y3Rpbmctc2hvcHBp/bmctY2FydC1waG90/by5qcGc"
+                        alt="">
+                </div>
                 <div class="project-content">
                     <h3>Animated Landing Page</h3>
                     <p>A modern landing page with smooth scroll animations, parallax effects, and interactive UI.</p>
@@ -255,7 +272,9 @@
                 </div>
             </div>
             <div class="project-card reveal">
-                <div class="project-image p3"><i class="fas fa-gamepad"></i></div>
+                <div class="project-image p3"><img
+                        src="https://images.unsplash.com/photo-1686110448055-5446817f6ac9?q=80&w=1085&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""></div>
                 <div class="project-content">
                     <h3>JS Mini Game</h3>
                     <p>An interactive browser game built entirely with vanilla JavaScript featuring canvas animations.
@@ -270,7 +289,9 @@
                 </div>
             </div>
             <div class="project-card reveal">
-                <div class="project-image p4"><i class="fas fa-pencil-ruler"></i></div>
+                <div class="project-image p4"><img
+                        src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=375&fit=crop" alt="">
+                </div>
                 <div class="project-content">
                     <h3>Pencil Art Gallery</h3>
                     <p>A beautiful gallery showcasing my pencil sketches with smooth transitions and lightbox view.</p>
@@ -282,10 +303,13 @@
                 </div>
             </div>
             <div class="project-card reveal">
-                <div class="project-image p5"><i class="fas fa-school"></i></div>
+                <div class="project-image p5"><img
+                        src="https://imgs.search.brave.com/8Ei9zAtFhHRv-xBa7U9e4wc42Z41kCuGSw8TaAf63Sc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/Ym9kaGdheWEveTQv/OTk5OXB4NjMxLng2/MzEuMTcwOTI2MTA1/MjE2LmYxeTQvY2F0/YWxvZ3VlL3NoYW50/aS1pbmRpYS10dXRv/cmlhbC1zY2hvb2wt/bWl5YS1iaWdoYS1i/b2RoZ2F5YS10dXRv/cmlhbHMtZHBpcjh2/bXJ5bS5qcGc_dz0z/ODQwJnE9NzU"
+                        alt="">
+                </div>
                 <div class="project-content">
                     <h3>School Website</h3>
-                    <p>Official website project for Shanti India School with modern design and full responsiveness.</p>
+                    <p>Official website of Shanti India School .</p>
                     <div class="project-tags"><span>Web</span><span>Design</span><span>Live</span></div>
                     <div class="project-btns">
                         <a href="https://www.shantindia.org" target="_blank" class="demo-btn"><i
@@ -295,7 +319,10 @@
                 </div>
             </div>
             <div class="project-card reveal">
-                <div class="project-image p5"><i class="fab fa-github"></i></div>
+                <div class="project-image p5"><img
+                        src="https://imgs.search.brave.com/j06pOdp94nC-97vnlEK6V_ABcSnUXS1HH3J9ljxy-54/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90bXMt/b3V0c291cmNlLmNv/bS9ibG9nL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI2LzA1L3do/YXQtaXMtZ2l0aHVi/LWNvZGVzcGFjZXMt/MzgweDI4MC5qcGc"
+                        alt="">
+                </div>
                 <div class="project-content">
                     <h3>GitHub Account</h3>
                     <p>My Official github Account with multi-project like snakegame, e-commerace and portfolio website.
