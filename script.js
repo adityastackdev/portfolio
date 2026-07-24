@@ -36,8 +36,9 @@ class P {
         this.y = Math.random() * canvas.height;
         this.vx = (Math.random() - .5) * .5;
         this.vy = (Math.random() - .5) * .5;
-        this.r = Math.random() * 2 + 1;
-        this.c = ['#00f0ff', '#b026ff', '#00ffe1', '#ff2bd6'][Math.floor(Math.random() * 4)];
+        this.r = Math.random() * 3 + 1;
+        this.c = ['#000000', '#b026ff', '#00ffe1', '#000000'][Math.floor(Math.random() * 4)];
+        //  this.c = ['#0051ff', '#d400ff', '#ff0000', '#000000'][Math.floor(Math.random() * 4)];
     }
     update() {
         this.x += this.vx; this.y += this.vy;
@@ -87,7 +88,7 @@ function animate() {
 animate();
 
 /* ============ TYPING ANIMATION ============ */
-const words = ["HTML Developer", "CSS Designer", "JavaScript Creator", "I Love Coding", "Professional Artist"];
+const words = ["I Love Coding", "HTML Developer", "CSS Designer", "I Love Coding", "JavaScript Creator", "Pencil Artist"];
 let wi = 0, ci = 0, deleting = false;
 const tEl = document.getElementById('typing');
 function type() {
@@ -171,8 +172,8 @@ document.querySelectorAll('.project-card').forEach(card => {
         const r = card.getBoundingClientRect();
         const x = e.clientX - r.left;
         const y = e.clientY - r.top;
-        const rx = ((y / r.height) - .5) * -15;
-        const ry = ((x / r.width) - .5) * 15;
+        const rx = ((y / r.height) - .1) * 40;
+        const ry = ((x / r.width) - .1) * -40;
         card.style.transform = `perspective(1000px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-10px)`;
     });
     card.addEventListener('mouseleave', () => card.style.transform = '');
